@@ -1,0 +1,130 @@
+{
+ "sections": [
+  {
+   "id": "8a848af1-7278-48d6-cefd-4e3fd65087c0",
+   "title": "Line-Based Grader (No Distractors)",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Line-Based-Grader--No-Distractors--8a84.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "15b44663-a370-514f-429b-736dee2dbfc3",
+   "title": "Line-Based Grader (With Distractors)",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Line-Based-Grader--With-Distractors--15b4.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2193d133-64a9-89f6-2f12-9a1098fdde8b",
+   "title": "Variable Check Grader",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Variable-Check-Grader-2193.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "c4690e30-6b13-fd48-c024-6640eb20ca29",
+   "title": "Unit Test Grader",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Unit-Test-Grader-c469.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7e230899-61d0-982e-12c3-af70b5bbda29",
+   "title": "Language Translation Grader",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Language-Translation-Grader-7e23.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b555e151-33ec-d971-e514-8f52e24ae663",
+   "title": "Turtle Grader",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Turtle-Grader-b555.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  }
+ ],
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": "",
+ "suppressPageNumbering": true,
+ "useSubmitButtons": true,
+ "useMarkAsComplete": true,
+ "hideMenu": false,
+ "allowGuideClose": false,
+ "collapsedOnStart": false,
+ "hideSectionsToggle": false,
+ "hideBackToDashboard": false,
+ "protectLayout": false
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-2564522726",
+  "source": {
+   "name": "line-based grader",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```python\nclass Car:\n  def __init__(self, make, model, color):\n    self.make = make\n    self.model = model\n    self.color = color\n```\n\nCreate the child class `Sedan`. Extend this class by adding the `describe` method. This method prints the string `I am a red Toyota Camry.` \"Toyota\" is the make and \"Camry\" is the model. \n\nDrag the appropriate code blocks into the box below. **Hint:** not all of the code blocks will be used.",
+   "initial": "class Sedan(Car):\n  def describe(self):\n    print(f&quot;I am a {self.color} {self.make} {self.model}&quot;)\nsuper().print(f&quot;I am a {self.color} {self.make} {self.model}&quot;)  #distractor\nclass Sedan:  #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
+   "grader": "1",
+   "guidance": "The solution is:\n\n```python\nclass Sedan(Car):\n  def describe(self):\n    print(f\"I am a {self.color} {self.make} {self.model}\")\n```\n\n* `super().print...` - is not correct because it missuses the `super()` keyword. `super()` is only used when referencing the parent class.\n* `class Sedan:` - is not correct because `Sedan` does not inherit from the `Car` class.",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   },
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-754373657",
+  "source": {
+   "name": "line-based grader (no distractors)",
+   "showName": false,
+   "instructions": "## Reading Question\n\nAssume the following code:\n\n```python\nclass Car:\n  def __init__(self, make, model, color):\n    self.make = make\n    self.model = model\n    self.color = color\n```\n\nCreate the child class `Sedan`. Extend this class by adding the `describe` method. This method prints the string `I am a red Toyota Camry.` \"Toyota\" is the make and \"Camry\" is the model. \n\nPlace the code blocks in the appropriate order.",
+   "initial": "class Sedan(Car):\n  def describe(self):\n    print(f&quot;I am a {self.color} {self.make} {self.model}&quot;)",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\"}",
+   "grader": "1",
+   "guidance": "The solution is:\n\n```python\nclass Sedan(Car):\n  def describe(self):\n    print(f\"I am a {self.color} {self.make} {self.model}\")\n```",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   },
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-533807919",
+  "source": {
+   "name": "variable check grader",
+   "showName": false,
+   "instructions": "## Reading Question\n\nDrag the code blocks into the correct order such that the value of `a` is swapped with the value of `b`. Click on the `??` or the value in the black box to toggle the values.",
+   "initial": "temp = $$toggle::a::b::temp$$\na = $$toggle::a::b::temp$$\nb = $$toggle::a::b::temp$$",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"vartests\":[{\"message\":\"\",\"initcode\":\"a = 4\\nb = 3\",\"code\":\"\",\"variables\":{\"a\":3,\"b\":4}}]}",
+   "grader": "2",
+   "guidance": "Here is one possible solution:\n\n```python\ntemp = a\na = b\nb = temp\n```",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   },
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-3846343070",
+  "source": {
+   "name": "unit test grader",
+   "showName": false,
+   "instructions": "## Reading Question\n\nCreate the function `double` which takes a number and returns a value multiplied by 2.\n\nDrag the appropriate code blocks into the box below. **Hint:** not all of the code blocks will be used.",
+   "initial": "def double(x):\n  return x * 2\nfunc double(x):  #distractor\ndef double(int x):  #distractor\nx * 2  #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\",\"unittests\":\"import unittestparson\\nclass myTests(unittestparson.unittest):\\n  def test_0(self):\\n    self.assertEqual(double(5),10,)\\n_test_result = myTests().main()\"}",
+   "grader": "3",
+   "guidance": "Here is the correct solution:\n\n```python\ndef double(x):\n  return x * 2\n```\n\n* Python is not a typed language, so `int x` is not correct\n* The keyword for functions is `def`, not `func`\n* You need to use the `return` statement",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   },
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-3717622254",
+  "source": {
+   "name": "language translation grader",
+   "showName": false,
+   "instructions": "## Reading Question\n\n",
+   "initial": "single_values &lt;- [1, 2, 3]\ndouble_values &lt;- []\nFOR EACH item IN single_values:\n  double &lt;- item * 2\n  APPEND(double_values, double)",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"executable_code\":\"single_values = [1, 2, 3]\\ndouble_values = []\\nfor item in single_values:\\n  double = item * 2\\n  double_values.append(double)\",\"programmingLang\":\"pseudo\",\"vartests\":[{\"message\":\"\",\"initcode\":\"\",\"code\":\"\",\"variables\":{}}]}",
+   "grader": "4",
+   "guidance": "Here is the solution:\n\n```markdown\nsingle_values <- [1, 2, 3]\ndouble_values <- []\nFOR EACH item IN single_values:\n  APPEND(double_values, item)\n```",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   },
+   "points": 20,
+   "oneTimeTest": true,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
+  }
+ },
+ {
+  "type": "parsons-puzzle",
+  "taskId": "parsons-puzzle-2602952746",
+  "source": {
+   "name": "turtle grader",
+   "showName": false,
+   "instructions": "## Reading Question\n\nUsing Turtle Graphics, draw a hexagon.\n\nDrag the appropriate code blocks into the box below. **Hint:** not all of the code blocks will be used.",
+   "initial": "for i in range(6):\n  myTurtle.forward(100)\n  myTurtle.right(60)\nmyTurtle.right(6) #distractor\nmyTurtle.right(80) #distractor\nfor i in range(8) #distractor",
+   "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\",\"executable_code\":\"\",\"programmingLang\":\"pseudo\",\"turtleModelCode\":\"modelTurtle.setpos(-80, 80)\\nfor side in range(6):\\n  modelTurtle.forward(100)\\n  modelTurtle.right(60)\"}",
+   "grader": "5",
+   "guidance": "",
+   "showGuidanceAfterResponseOption": {
+    "type": "Never"
+   },
+   "points": 20,
+   "oneTimeTest": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Parsons Puzzle"
+     }
+    ],
+    "files": [],
+    "opened": []
+   },
+   "bloomsObjectiveLevel": "",
+   "learningObjectives": ""
+  }
+ }
+]
